@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin : 0;
+            padding : 0;
+            font-family : 'Noto Sans KR', sans-serif;
+        }
+
+        .oneplace {
+            text-align: center;
+            width : 1920px;
+            height : 260px;
+            background-image : url(https://i.postimg.cc/kgMMv8Jd/festival-03-1.jpg);
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+
+
+        .menu1 li {
+            list-style : none;
+        }
+
+        .menu1 li a {
+            text-decoration : none;
+            color : #ffffff;
+            font-weight : 300;
+            padding-bottom : 5px;
+            font-size: 14px;
+
+            position : relative;
+        }
+
+        .menu1 li a::after {
+            content :"";
+            position : absolute;
+            bottom : 0;
+            left : 50%;
+            transform : translateX(-50%);
+            width : 0;
+            height : 1.5px;
+            background : #D1AD8B;
+            transition : all .4s ease-out;
+        }
+
+        .menu1 li a:hover::after {
+            width : 100%;
+        }
+
+        .menu1 li:not(:last-child){
+            padding-right : 120px;
+        }
+
+        .menu1 {
+            display : flex;
+            flex-direction : row;
+            justify-content : center;
+        }
+
+        .menu1 a:hover {
+            color : #D1AD8B;
+        }
+
+        .title1 {
+            margin-top: 40px;
+            color : #ffffff;
+        }
+
+        .title1 h1 {
+            padding-bottom: 12px;
+            font-size: 28px;
+            color : #ffffff;
+        }
+
+        .title1 p {
+            font-size: 14px;
+            color : #ffffff;
+        }
+
+        .map {
+            width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 50px;
+            margin-top: 120px;
+        }
+
+        .map p {
+            line-height: 30px;
+            padding-top: 15px;
+        }
+
+        .map img {
+            width: 1440px;
+            padding-top: 60px;
+        }
+
+        .plus {
+            width: 1440px;
+            display: flex;
+            justify-content: end;
+        }
+
+        .plus a {
+            text-decoration: none;
+            color : #D1AD8B;
+        }
+
+        .arch {
+            width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 50px;
+            margin-top: 120px;
+        }
+
+        .arch p {
+            line-height: 30px;
+            padding-top: 15px;
+        }
+
+        .img2 {
+            margin-top: 80px;
+            width:1440px;
+            height: 260px;
+            overflow-x: scroll;
+            display: flex;
+            align-items: center;
+        }
+
+        .img2 img {
+            width:230px;
+            height: 230px;
+            padding-right: 10px;
+        }
+
+        .img2::-webkit-scrollbar {
+            height: 7px;
+        }
+
+        .img2::-webkit-scrollbar-thumb {
+            background: #D1AD8B;
+            border-radius: 2px;
+        }
+
+        .img2::-webkit-scrollbar-track {
+            background: rgba(168, 168, 168, 0.2);
+            border-radius: 2px;
+        }
+
+
+        hr {
+            margin-top : 120px;
+            width : 76%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .footer {
+            margin-top: 120px;
+            text-align: center;
+            line-height: 40px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #c7c7c7;
+            color : #555555;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="explanationpage">
+        <div class="oneplace">
+            <div class="nav">
+                <a href="#"><img src="https://i.postimg.cc/W4s3Kgp8/image.png" width="50px"></a>
+                <div class="menu">
+                    <ul class="menu1">
+                        <li><a href="전시정보 페이지.html">전시</a></li>
+                        <li><a href="전시정보 페이지 2.html">관람</a></li>
+                        <li><a href="이벤트 페이지.html">이벤트</a></li>
+                        <li><a href="안내페이지.html">문신 미술관</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="title1">
+                <h1>문신 미술관</h1>
+                <p>문신 미술관에 대해 알려드립니다.</p>
+            </div>
+        </div>
+
+        <div class="map">
+            <div class="text1">
+                <h1>관람 안내</h1>
+                <p>개관 시간 : 09 : 00 ~ 18 : 00 (발권은 관람 종료 1시간 전까지만 가능합니다)<br>
+                    휴관일 : 매주 월요일, 1월 1일, 설, 추석<br>
+                    주소 : 경남 창원시 마산합포구 문신길 147 (추산동 51-1)<br>
+                    전화번호 : 055-225-7181</p>
+            </div>
+
+            <div class="img1">
+                <a href="https://map.naver.com/v5/search/%EB%AC%B8%EC%8B%A0%EB%AF%B8%EC%88%A0%EA%B4%80?placeSearchOption=fromNxList=true%26noredirect=1%26entry=pll"><img src="https://i.postimg.cc/tRmfS5FH/2022-12-15-044022.png"></a>
+            </div>
+
+            <div class="plus"><a href="https://map.naver.com/v5/search/%EB%AC%B8%EC%8B%A0%EB%AF%B8%EC%88%A0%EA%B4%80?placeSearchOption=fromNxList=true%26noredirect=1%26entry=pll"><p>상상 더하기 ></p></a></div>
+        </div>
+
+        <div class="arch">
+            <div class="text2">
+                <h1>시설 안내</h1>
+                <p>매표소 : 티켓 발권 및 전시실 안내<br>
+                    제 1 전시관 : 상설 및 기획 전시실<br>
+                    제 2 전시관 : 상설 및 기획 전시실<br>
+                    문신원형미술관 : 문신 석고 원형 작품 위주의 상설 전시<br>
+                    야외 전시장 : 스테인리스, 브론즈 작품 위주 대형 야외작품 전시<br>
+                    문신의 묘 *문신 탄생 100주년 기념 개방</p>
+            </div>
+
+            <div class="img2">
+                <img src="https://i.postimg.cc/PJ4FMWbP/2.jpg">
+                <img src="https://i.postimg.cc/TPD7sMq8/BBS-202009110326497990-ratio-240220.jpg">
+                <img src="https://i.postimg.cc/SxzfSLXC/BBS-202009110331255880-ratio-240220.jpg">
+                <img src="https://i.postimg.cc/GtcX9B0r/BBS-202009110325218580-ratio-240220.jpg">
+                <img src="https://i.postimg.cc/7ZpX0tvK/BBS-202009110329434440-ratio-240220.jpg">
+                <img src="https://i.postimg.cc/yd7mywLy/images.jpg">
+                <img src="https://i.postimg.cc/xjxvLpML/BBS-202009110334387270-ratio-240220.jpg">
+                <img src="https://i.postimg.cc/ZYCjRvMb/BBS-202009110333416560-ratio-240220.jpg">
+                <img src="https://i.postimg.cc/jjx4rDfr/BBS-202009110330330170-ratio-240220.jpg">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>(우 51435) 경상남도 창원시 성산구 중앙대로 151 (용호동)</p>
+            <p>1899 - 1111, 055 -225 - 2114</p>
+            <p>개인정보처리방침 / 저작권 정책 / 뷰어 다운로드 / 오시는 길</p>
+            <hr size="3" noshade>
+            <br>
+            <p><b>Copyright 2022. Mun-sin art center All rights reserved.</b></p>
+        </div>
+    </div>
+</body>
+</html>
