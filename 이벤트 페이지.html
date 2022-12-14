@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin : 0;
+            padding : 0;
+            font-family : 'Noto Sans KR', sans-serif;
+        }
+
+        .oneplace {
+            text-align: center;
+            width : 1920px;
+            height : 260px;
+            background-image : url(https://i.postimg.cc/kgMMv8Jd/festival-03-1.jpg);
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+
+
+        .menu1 li {
+            list-style : none;
+        }
+
+        .menu1 li a {
+            text-decoration : none;
+            color : #ffffff;
+            font-weight : 300;
+            padding-bottom : 5px;
+            font-size: 14px;
+
+            position : relative;
+        }
+
+        .menu1 li a::after {
+            content :"";
+            position : absolute;
+            bottom : 0;
+            left : 50%;
+            transform : translateX(-50%);
+            width : 0;
+            height : 1.5px;
+            background : #D1AD8B;
+            transition : all .4s ease-out;
+        }
+
+        .menu1 li a:hover::after {
+            width : 100%;
+        }
+
+        .menu1 li:not(:last-child){
+            padding-right : 120px;
+        }
+
+        .menu1 {
+            display : flex;
+            flex-direction : row;
+            justify-content : center;
+        }
+
+        .menu1 a:hover {
+            color : #D1AD8B;
+        }
+
+        .title1 {
+            margin-top: 40px;
+            color : #ffffff;
+        }
+
+        .title1 h1 {
+            padding-bottom: 12px;
+            font-size: 28px;
+            color : #ffffff;
+        }
+
+        .title1 p {
+            font-size: 14px;
+            color : #ffffff;
+        }
+
+        hr {
+            margin-top : 120px;
+            width : 76%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title2 hr {
+            margin-top : 40px;
+            width : 12%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title2 {
+            text-align: center;
+            margin-top: 160px;
+            color: #333333;
+
+        }
+
+        .ex1 {
+            display: flex;
+            align-items: center;
+            width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ex1eng {
+            margin-left: 80px;
+            color: #333333;
+        }
+
+        .ex1eng h2 {
+            font-size: 24px;
+        }
+
+        .ex1eng p:not(:last-child){
+            line-height: 60px;
+        }
+
+        .eduhr hr {
+            margin-top : 0px;
+            width : 70%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .ex2 {
+            display: flex;
+            align-items: center;
+            width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 120px;
+        }
+
+        .ex2eng {
+            margin-left: 80px;
+            color: #333333;
+        }
+
+        .ex2eng h2 {
+            font-size: 24px;
+        }
+
+        .ex2eng p:not(:last-child){
+            line-height: 60px;
+        }
+        
+        .footer {
+            text-align: center;
+            line-height: 40px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #c7c7c7;
+            color : #555555;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+
+        .plus {
+            width: 1670px;
+            display: flex;
+            justify-content: end;
+        }
+
+        .plus a {
+            text-decoration: none;
+            color : #D1AD8B;
+        }
+
+        .title3 hr {
+            margin-top : 40px;
+            width : 12%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .title3 {
+            text-align: center;
+            margin-top: 160px;
+            color: #333333;
+
+        }
+
+        .box-wrap {
+            width: 90vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-bottom: 400px;
+        }
+
+        .box {
+            flex: 0 0 500px;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .box img {
+            width: 100%;
+        }
+
+        .box .text {
+            position : absolute;
+            color : #ffffff;
+            background: rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            opacity: 0;
+            padding-bottom: 40px;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+
+        .box .text h3 {
+            font-size: 18px;
+            line-height: 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #fff;
+        }
+
+        .box:hover .text{
+            opacity: 1;
+            padding-top: 250px;
+            padding-bottom: 250px;
+        }
+
+        .box1 {
+            flex: 0 0 500px;
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 120px;
+        }
+        
+        .box1 img {
+            width: 100%;
+        }
+
+        .box1 .text {
+            position : absolute;
+            color : #ffffff;
+            background: rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            opacity: 0;
+            padding-bottom: 40px;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+
+        .box1 .text h3 {
+            font-size: 18px;
+            line-height: 40px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #fff;
+        }
+
+        .box1:hover .text{
+            opacity: 1;
+            padding-top: 250px;
+            padding-bottom: 250px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="eventpage">
+        <div class="oneplace">
+            <div class="nav">
+                <a href="#"><img src="https://i.postimg.cc/W4s3Kgp8/image.png" width="50px"></a>
+                <div class="menu">
+                    <ul class="menu1">
+                        <li><a href="전시정보 페이지.html">전시</a></li>
+                        <li><a href="전시정보 페이지 2.html">관람</a></li>
+                        <li><a href="이벤트 페이지.html">이벤트</a></li>
+                        <li><a href="안내페이지.html">문신 미술관</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="title1">
+                <h1>교육 / 행사</h1>
+                <p>남녀노소, 나이 상관 없이 함께하는 공간</p>
+            </div>
+        </div>
+
+        <div class="edu">
+            <div class="title2">
+                <h1>교육</h1>
+                <hr size="3" noshade>
+            </div>
+
+            <div class="ex1">
+                <img src="https://i.postimg.cc/fRL5XB7p/3.jpg" width="25%">
+
+                <div class="ex1eng">
+                    <h2>아트노트</h2>
+                    <p>문신 미술관 2층</p>
+                    <p>체험료 : 무료</p>
+                    <p>문신 작가의 예술 세계와 작품의 느낌을 확장해 보는 공간입니다.<br>
+                    전시를 관람하고 문신 작가의 작품 혹은 미술관의 하루가 어떻게 느껴지시나요? 아트노트는 문신 작품의 느낌 혹은 미술관에서의 하루를 기록하는 그림 다이어리로 준비된 활동지에 색연필을 이용해 나만의 아트노트를 그려보는 체험입니다.
+                    문신미술관과 함께 해주세요!
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="eduhr"><hr size="3" noshade></div>
+
+            <div class="ex2">
+                <img src="https://i.postimg.cc/QdHkVVhr/BBS-202208010153533130-ratio-750750.jpg" width="25%">
+
+                <div class="ex2eng">
+                    <h2>시시각각</h2>
+                    <p>문신 미술관 조각 정원 감상 가이드</p>
+                    <p>체험료 : 무료</p>
+                    <p>문신 미술관 정원의 야외 조각 작품을 감상하고, 문신이 설계한 건축물과 작업장을 둘러볼 수 있습니다.
+                    계절, 시간, 감정 등 매 순간 새롭게 다가오는 문신의 작품을 감상하고 경험하는 과정을 기록하는 안내서로서 시시각각 변하는 자연이 반영된 작품에 새로운 시각을 담아냅니다. 활동지는 안내데스크에서 수령 후 자율 활동이 가능합니다.
+                    </p>
+                </div>
+            </div>
+
+            <div class="plus"><a href="이벤트 페이지.html"><p>상상 더하기 ></p></a></div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="events">
+            <div class="title3">
+                <h1>행사</h1>
+                <hr size="3" noshade>
+            </div>
+
+            <div class="box-wrap">
+                <div class="box">
+                    <div class="img"><img src="https://i.postimg.cc/ZqjYWPmf/BBS-202201260334592990-ratio-750750.png" width="20%"></div>
+                    <div class="text">
+                        <h3>창원특례시 출범 기념 새해 소망카드 달기 이벤트</h3>
+                        <p>문신원형미술관 2층</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img"><img src="https://i.postimg.cc/RhJvpjH8/BBS-202111261005465585-ratio-750750.jpg" width="20%"></div>
+                    <div class="text">
+                        <h3>문신미술관 SNS 구독이벤트 안내</h3>
+                        <p>인스타그램 통한 참여, 신청 및 발표</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="img"><img src="https://i.postimg.cc/fb7tB0NX/BBS-201906100142580461-ratio-750750.jpg" width="20%"></div>
+                    <div class="text">
+                        <h3>문신미술관 불빛조각야외음악회 개최</h3>
+                        <p>문신미술관 야외조각 전시장</p>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="img"><img src="https://i.postimg.cc/k5yGx3Qv/BBS-202111220551187210-ratio-750750.jpg" width="20%"></div>
+                    <div class="text">
+                        <h3>문신 아트 컬러링 연계 이벤트</h3>
+                        <p>인스타그램 통한 참여, 신청 및 발표</p>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="img"><img src="https://i.postimg.cc/gc1hcpNx/BBS-202201260336468700-ratio-750750.png" width="20%"></div>
+                    <div class="text">
+                        <h3>범 내려온다</h3>
+                        <p>댓글 추첨을 통한 무작위 선정, 홈페이지 발표</p>
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="img"><img src="https://i.postimg.cc/Vvhddqqy/BBS-202002170424199341-ratio-750750.jpg" width="20%"></div>
+                    <div class="text">
+                        <h3>제19회 문신미술상 요강</h3>
+                        <p>시상부분 : 입체 및 평면</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>(우 51435) 경상남도 창원시 성산구 중앙대로 151 (용호동)</p>
+            <p>1899 - 1111, 055 -225 - 2114</p>
+            <p>개인정보처리방침 / 저작권 정책 / 뷰어 다운로드 / 오시는 길</p>
+            <hr size="3" noshade>
+            <br>
+            <p><b>Copyright 2022. Mun-sin art center All rights reserved.</b></p>
+        </div>
+    </div>
+</body>
+</html>
