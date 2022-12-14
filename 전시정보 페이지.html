@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin : 0;
+            padding : 0;
+            font-family : 'Noto Sans KR', sans-serif;
+        }
+
+        .oneplace {
+            text-align: center;
+            width : 1920px;
+            height : 130px;
+            background-image : url(https://i.postimg.cc/kgMMv8Jd/festival-03-1.jpg);
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+
+
+        .menu1 li {
+            list-style : none;
+        }
+
+        .menu1 li a {
+            text-decoration : none;
+            color : #ffffff;
+            font-weight : 300;
+            padding-bottom : 5px;
+
+            position : relative;
+        }
+
+        .menu1 li a::after {
+            content :"";
+            position : absolute;
+            bottom : 0;
+            left : 50%;
+            transform : translateX(-50%);
+            width : 0;
+            height : 1.5px;
+            background : #D1AD8B;
+            transition : all .4s ease-out;
+        }
+
+        .menu1 li a:hover::after {
+            width : 100%;
+        }
+
+        .menu1 li:not(:last-child){
+            padding-right : 120px;
+        }
+
+        .menu1 {
+            display : flex;
+            flex-direction : row;
+            justify-content : center;
+        }
+
+        .menu1 a:hover {
+            color : #D1AD8B;
+        }
+
+        hr {
+            margin-top : 120px;
+            width : 76%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .twoplace {
+            width : 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items : center;
+            margin-top : 120px;
+        }
+
+        .expl {
+            margin-left: 80px;
+            margin-top : 455px;
+            width : 1400px;
+        }
+
+        .expl h1 {
+            margin-bottom : 20px;
+            color : #D1AD8B;
+            display : flex;
+            flex-basis: 100%;
+            align-items: center;
+        }
+
+        .expl h1::after{
+            content : "";
+            flex-grow : 32;
+            margin : 0px 16px;
+            background : #D1AD8B;
+            height : 1px;
+            font-size : 0px;
+            line-height : 0px;
+        }
+
+
+        .expl p {
+            line-height : 45px;
+            color : #333333;
+        }
+
+        .threeplace {
+            width : 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align : center;
+            line-height: 30px;
+            margin-top : 40px;
+        }
+
+        .threeplace p {
+            color : #333333;
+            padding-top: 80px;
+            padding-bottom: 240px;
+        }
+
+        .threeplace img {
+            width : 1440px;
+            height: 840px;
+            padding-top: 120px;
+        }
+
+        .threeplace .hr {
+            margin-top : 120px;
+            width : 76%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .clearfix {
+            clear : both;
+        }
+
+        .footer {
+            text-align: center;
+            line-height: 40px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #c7c7c7;
+            color : #555555;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="subpage1">
+        <div class="oneplace">
+            <div class="nav">
+                <a href="#"><img src="https://i.postimg.cc/W4s3Kgp8/image.png" width="70px"></a>
+                <div class="menu">
+                    <ul class="menu1">
+                        <li><a href="전시정보 페이지.html">전시</a></li>
+                        <li><a href="전시정보 페이지 2.html">관람</a></li>
+                        <li><a href="이벤트 페이지.html">이벤트</a></li>
+                        <li><a href="안내페이지.html">문신 미술관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="twoplace">
+            <img src="https://i.postimg.cc/RZN7mtTQ/BBS-202210280224159854-ratio-750750.jpg" width="30%">
+            <div class="expl">
+                <h1>MOONSHIN 1922-1995 展</h1>
+                <p>◎ 전 시 명 : MOONSHIN 1922-1995<br>◎ 전시기간 : 2022. 10. 14.(금) ~ 2023. 3. 예정<br>◎ 출 품 작 : 조각 15점, 채화 1점, 드로잉 23점, 엽서 2점, 시집 1점, 그 외 기록물 49점</p>
+            </div>
+        </div>
+
+        <hr size="3" noshade>
+
+        <div class="threeplace">
+            <img src="https://i.postimg.cc/xC8b2w15/BBS-202210280224159470-ratio-750750.jpg">
+            <img src="https://i.postimg.cc/SKvcJS53/BBS-202210280224159722-ratio-750750.jpg">
+            <img src="https://i.postimg.cc/K8cTf3hC/BBS-202210280224159793-ratio-750750.jpg">
+            <img src="https://i.postimg.cc/9fRrgG8g/BBS-202210280224159854-ratio-750750.jpg">
+            <hr size="3" noshade>
+            <p>문신미술관에서는 문신과 고향을 주제로 한 아카이브전 《MOONSHIN 1922-1995》展을 마련했습니다.<br><br>문신은 마산(현.창원특례시)에서 유년시절을 보내며 마산 앞바다가 내려다보이는 추산동, 예술가들이 활보하던 창동과 오동동 등에서 예술가의 꿈과 영감을 키워왔습니다. 그는 일본과 프랑스 등지에서 유랑생활을 하며 독창적인 예술성으로 인정받아왔지만, 조각가로서 전성기를 맞이했던 1980년대에 고향인 이곳으로 영구 귀국했습니다. 약 14년이라는 시간에 걸쳐 문신미술관을 건립하며 교류했던 많은 사람들이 아직도 시절의 문신을 기억하고 있습니다. 이번 전시를 통해 바다와 교감하며 키워온 그의 예술 세계와 고향을 누구보다 사랑했던 문신 그리고 그를 그리는 사람들의 추억을 느껴보시기 바랍니다.</p>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer">
+            <p>(우 51435) 경상남도 창원시 성산구 중앙대로 151 (용호동)</p>
+            <p>1899 - 1111, 055 -225 - 2114</p>
+            <p>개인정보처리방침 / 저작권 정책 / 뷰어 다운로드 / 오시는 길</p>
+            <hr size="3" noshade>
+            <br>
+            <p><b>Copyright 2022. Mun-sin art center All rights reserved.</b></p>
+        </div>
+    </div>
+</body>
+</html>
