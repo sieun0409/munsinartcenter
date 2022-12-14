@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin : 0;
+            padding : 0;
+            font-family : 'Noto Sans KR', sans-serif;
+        }
+
+        .oneplace {
+            text-align: center;
+            width : 1920px;
+            height : 130px;
+            background-image : url(https://i.postimg.cc/kgMMv8Jd/festival-03-1.jpg);
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+
+
+        .menu1 li {
+            list-style : none;
+        }
+
+        .menu1 li a {
+            text-decoration : none;
+            color : #ffffff;
+            font-weight : 300;
+            padding-bottom : 5px;
+
+            position : relative;
+        }
+
+        .menu1 li a::after {
+            content :"";
+            position : absolute;
+            bottom : 0;
+            left : 50%;
+            transform : translateX(-50%);
+            width : 0;
+            height : 1.5px;
+            background : #D1AD8B;
+            transition : all .4s ease-out;
+        }
+
+        .menu1 li a:hover::after {
+            width : 100%;
+        }
+
+        .menu1 li:not(:last-child){
+            padding-right : 120px;
+        }
+
+        .menu1 {
+            display : flex;
+            flex-direction : row;
+            justify-content : center;
+        }
+
+        .menu1 a:hover {
+            color : #D1AD8B;
+        }
+
+        hr {
+            margin-top : 120px;
+            width : 76%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .twoplace {
+            width : 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items : center;
+            margin-top : 120px;
+        }
+
+        .expl {
+            margin-left: 80px;
+            margin-top : 455px;
+            width : 1400px;
+        }
+
+        .expl h1 {
+            margin-bottom : 20px;
+            color : #D1AD8B;
+            display : flex;
+            flex-basis: 100%;
+            align-items: center;
+        }
+
+        .expl h1::after{
+            content : "";
+            flex-grow : 32;
+            margin : 0px 16px;
+            background : #D1AD8B;
+            height : 1px;
+            font-size : 0px;
+            line-height : 0px;
+        }
+
+
+        .expl p {
+            line-height : 45px;
+            color : #333333;
+        }
+
+        .threeplace {
+            width : 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align : center;
+            line-height: 30px;
+            margin-top : 40px;
+        }
+
+        .threeplace p {
+            color : #333333;
+            padding-top: 80px;
+            padding-bottom: 240px;
+        }
+
+        .threeplace img {
+            width : 1440px;
+            height: 840px;
+            padding-top: 120px;
+        }
+
+        .threeplace .hr {
+            margin-top : 120px;
+            width : 76%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .clearfix {
+            clear : both;
+        }
+
+        .footer {
+            text-align: center;
+            line-height: 40px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #c7c7c7;
+            color : #555555;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="subpage1">
+        <div class="oneplace">
+            <div class="nav">
+                <a href="#"><img src="https://i.postimg.cc/W4s3Kgp8/image.png" width="70px"></a>
+                <div class="menu">
+                    <ul class="menu1">
+                        <li><a href="전시정보 페이지.html">전시</a></li>
+                        <li><a href="전시정보 페이지 2.html">관람</a></li>
+                        <li><a href="이벤트 페이지.html">이벤트</a></li>
+                        <li><a href="안내페이지.html">문신 미술관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="twoplace">
+            <img src="https://i.postimg.cc/k4VY4XJh/BBS-202209080445394716-ratio-750750.jpg" width="30%">
+            <div class="expl">
+                <h1>상설전 《조각가의 혼》展</h1>
+                <p>◎ 전 시 명 : 문신 탄생 100주년 기념전 《조각가의 혼》 展</p>
+            </div>
+        </div>
+
+        <hr size="3" noshade>
+
+        <div class="threeplace">
+            <img src="https://i.postimg.cc/SKnfLTBn/BBS-202209080445394115-ratio-750750.jpg">
+            <img src="https://i.postimg.cc/05VrxkMq/BBS-202209080445393454-ratio-750750.jpg">
+            <img src="https://i.postimg.cc/mZnR8t1h/BBS-202209080445392692-ratio-750750.jpg">
+            <img src="https://i.postimg.cc/mrTGt9Jp/BBS-202209080445392071-ratio-750750.jpg">
+            <hr size="3" noshade>
+            <p>문신 탄생 100주년 기념전 《조각가의 혼》 展
+                <br><br>
+                魂 : 넋, 마음, 생각, 사물의 모양<br>
+                hone : 연마하다, 갈고닦음<br>
+                <br>
+                  문신미술관은 문신 조각의 탄생 과정을 살펴보고 그 예술적 가치를 소개하고자 세계적인 조각의 거장 문신(1922-1995)탄생 100주년 기념전 《조각가의 혼》을 마련했다.
+                <br><br>
+                  ‘혼’은 문신을 거론하기 위해 사용하는 수많은 키워드 중 육체와 정신의 균형을 중요시했던 그의 작품세계를 한마디로 일축하는 단어다. 그의 친필원고에서 말했듯 “흙으로 돌아가는 최후의 순간까지 예술혼을 불태우면서 장엄하게 산화하고자”했던 열정과 집념의 ‘혼’은 문신의 예술에 대한 태도뿐만 아니라 작업대상과 방법, 예술가로서의 삶의 목표를 제시하고 있다.
+                <br>
+                  전시는 문신이 작품을 제작하기 위한 과정을 살펴보기 위해 동음이의어인 ‘혼(魂)’과‘hone’이라는 두 개의 섹션으로 나뉘어 구성했다.
+                  첫 번째 섹션의 ‘혼(魂)’에서는 문신의 작품구상에 있어서 드러나는 드로잉과 석고원형을 소개한다. 魂은 넋 혼으로 읽으며, 사람의 마음과 생각 그리고 사물의 모양을 말한다. 문신의 드로잉과 석고원형을 살펴보면, 근원적인 생물형태적 이미지를 모티브로 하여 어떤 특별한 정형의 형태를 묘사하지 않고서도 유기적인 개체 성장의 무한한 가능성과 생명감을 제시하고 있다. 문신의 생물형태적인 이미지는 꿈의 이미지와 우연의 법칙 그리고 무의식의 자유로운 연상 과정을 드러내는 조형 언어로 사용되고 있음을 알 수 있다.
+                  두 번째 섹션의 ‘hone’에서는 작품을 제작하기 위해 사용한 도구들과 그의 아틀리에를 재현한 공간을 소개한다. hone[혼]은 연마하다, 갈고닦음이라는 뜻으로, 문신이 작품을 더욱 매끈하게 다듬기 위하여 사용한 다양한 도구와 그의 아틀리에 사진 아카이브를 볼 수 있다. 공간에서는 연필, 붓과 같은 화구뿐만 아니라 톱, 그라인더, 망치, 사포, 끌과 같은 공구들을 소개하며, 나무, 청동, 스테인리스, 석고 등 다양한 재료와 방식을 거침없이 활용해 탄생한 작품과정을 상상해볼 수 있다. 이번 전시에서 보여주는 공구들은 문신이 실제 사용한 것으로, 그의 손길과 정신이 고스란히 남아있어 관람자에게 문신을 더욱 생동감 있게 느껴볼 수 있게끔 한다.
+                  또한 《조각가의 혼》의 부제인 ‘Soul of Sculpture’는 “오직 내가 바라는 것이 있다면 이 형태들이 생명성을 가지게 되어, 궁극적으로 생명의 의미성을 가지게 되길 바랄 뿐이다”고 남긴 문신의 친필원고를 바탕으로, 문신 조각의 생명성을 함축한 것이다.
+                <br>
+                  문신은 우연함과 자유로움을 모방하지만 빈틈없이 계산된 형태를 표현한 충실하고도 독창적인 예술가다. “예술의 세계에는 제자도 스승도 없으며, 독창적인 작품만이 전부다”라는 그의 말처럼, 주제, 재료, 기법 등에 있어 어떠한 편견 없이 도전했던 문신의 작품을 문신 탄생 100주년을 맞아 새롭게 들여다볼 때다.
+                <br><br>
+                ※ 본 전시는 상설전시이므로, 별도의 전시기간이 없습니다.<br>
+                ※ 관람시간 및 운영사항 등은 공지사항을 참고해주시기 바랍니다.<br>
+                <br>
+                ☎ 문의 : 055)225-7181</p>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer">
+            <p>(우 51435) 경상남도 창원시 성산구 중앙대로 151 (용호동)</p>
+            <p>1899 - 1111, 055 -225 - 2114</p>
+            <p>개인정보처리방침 / 저작권 정책 / 뷰어 다운로드 / 오시는 길</p>
+            <hr size="3" noshade>
+            <br>
+            <p><b>Copyright 2022. Mun-sin art center All rights reserved.</b></p>
+        </div>
+    </div>
+</body>
+</html>
