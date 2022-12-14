@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin : 0;
+            padding : 0;
+            font-family : 'Noto Sans KR', sans-serif;
+        }
+
+        .oneplace {
+            text-align: center;
+            width : 1920px;
+            height : 800px;
+            background-image : url(https://i.postimg.cc/kgMMv8Jd/festival-03-1.jpg);
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+
+
+        .menu1 li {
+            list-style : none;
+        }
+
+        .menu1 li a {
+            text-decoration : none;
+            color : #ffffff;
+            font-weight : 300;
+            padding-bottom : 5px;
+
+            position : relative;
+        }
+
+        .menu1 li a::after {
+            content :"";
+            position : absolute;
+            bottom : 0;
+            left : 50%;
+            transform : translateX(-50%);
+            width : 0;
+            height : 1.5px;
+            background : #D1AD8B;
+            transition : all .4s ease-out;
+        }
+
+        .menu1 li a:hover::after {
+            width : 100%;
+        }
+
+        .menu1 li:not(:last-child){
+            padding-right : 120px;
+        }
+
+        .menu1 {
+            display : flex;
+            flex-direction : row;
+            justify-content : center;
+        }
+
+        .menu1 a:hover {
+            color : #D1AD8B;
+        }
+
+        .twoplace {
+            width : 1440px;
+            margin-left : auto;
+            margin-right : auto;
+        }
+
+        .title h1{
+            margin-top : 160px;
+            font-size : 32px;
+            padding-bottom : 10px;
+            color : #333333;
+        }
+
+        .title p b {
+            color : #333333;
+        }
+
+        .title p {
+            font-size: 16px;
+            color : #777777
+        }
+
+        .twoplace img {
+            float : right;
+            margin-top : -240px;
+        }
+
+        .artsite {
+            padding-top: 160px;
+        }
+
+        .artsite a {
+            text-decoration: none;
+            color : #77777786;
+            font-weight : 600;
+            line-height : 60px;
+            font-size: 18px;
+        }
+
+        .artsite a:hover {
+            color : #D1AD8B;
+            background-color: #ffffff;
+        }
+
+        .artsite a::after {
+            content :"";
+            position : absolute;
+            left : 0%;
+            transform : translateX(-40%);
+            width : 0;
+            height : 3px;
+            background : #D1AD8B;
+            transition : all .4s ease-out;
+        }
+
+        .artsite a:hover::after {
+            width : 100%;
+        }
+
+        .threeplace {
+            width : 1440px;
+            margin-left : auto;
+            margin-right : auto;
+            margin-top : 480px;
+        }
+
+        .expl{
+            display: flex;
+            align-items : center;
+        }
+
+        .threeplace img {
+            margin-top : 80px;
+        }
+
+        .expl p{
+            padding-left : 120px;
+            font-size : 16px;
+            line-height : 28px;
+            color : #333333;
+        }
+
+        .threeplace a {
+            text-decoration : none;
+            color : #D1AD8B;
+            float : right;
+            margin-top : -20px;
+        }
+
+        .fourplace {
+            width : 1440px;
+            margin-left : auto;
+            margin-right : auto;
+            margin-top : 240px;
+        }
+
+        .group {
+            display : flex;
+            align-items : center;
+            padding-top : 60px;
+            padding-bottom : 120px;
+        }
+
+        .subgroup1 {
+            width : 460px;
+            text-align : center;
+            font-size: 20px;
+            padding-top : 70px;
+            padding-bottom : 102px;
+            border : 2px solid #777777;
+            margin-right : 20px;
+        }
+
+        .subgroup1:hover {
+            border : 2px solid #D1AD8B;
+            color : #D1AD8B;
+        }
+
+        .subgroup1 img {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            filter: opacity(0.5) drop-shadow(0 0 0 #777777);
+        }
+
+        .subgroup1 a {
+            text-decoration: none;
+            color : #777777;
+            max-width: 100px;
+        }
+
+        .subgroup1:hover {
+            color : #D1AD8B;
+        }
+
+        .subgroup2 {
+            width : 460px;
+            text-align : center;
+            font-size: 20px;
+            padding-top : 60px;
+            padding-bottom : 140px;
+            border : 2px solid #777777;
+            margin-right : 10px;
+            margin-left: 10px;
+        }
+
+        .subgroup2 img {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            filter: opacity(0.5) drop-shadow(0 0 0 #777777);
+        }
+
+        .subgroup2 a {
+            text-decoration: none;
+            color : #777777;
+        }
+
+        .subgroup2:hover {
+            border : 2px solid #D1AD8B;
+        }
+
+        .subgroup3 {
+            width : 460px;
+            text-align : center;
+            font-size: 20px;
+            padding-top : 60px;
+            padding-bottom : 140px;
+            border : 2px solid #777777;
+            margin-left: 20px;
+        }
+
+        .subgroup3 img {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            filter: opacity(0.5) drop-shadow(0 0 0 #777777);
+        }
+
+        .subgroup3 a {
+            text-decoration: none;
+            color : #777777;
+        }
+
+        .subgroup3:hover {
+            border : 2px solid #D1AD8B;
+        }
+
+        .clearfix {
+            clear : both;
+        }
+
+        .footer {
+            text-align: center;
+            line-height: 40px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #c7c7c7;
+            color : #555555;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+
+        hr {
+            margin-top : 120px;
+            width : 76%;
+            color : #777777;
+            border : 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="mainpage">
+        <div class="oneplace">
+            <div class="nav">
+                <a href="메인페이지.html"><img src="https://i.postimg.cc/W4s3Kgp8/image.png" width="70px"></a>
+                <div class="menu">
+                    <ul class="menu1">
+                        <li><a href="전시정보 페이지.html">전시</a></li>
+                        <li><a href="전시정보 페이지 2.html">관람</a></li>
+                        <li><a href="이벤트 페이지.html">이벤트</a></li>
+                        <li><a href="안내페이지.html">문신 미술관</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="twoplace">
+            <div class="title">
+                <h1>오늘의 전시</h1>
+                <p>작품, 그 이상의 <b>가치</b></p>
+            </div>
+
+            <img src="https://i.postimg.cc/RZN7mtTQ/BBS-202210280224159854-ratio-750750.jpg">
+
+            <div class="artsite">
+                <a href="전시정보 페이지.html"><h1>MOONSHIN 1922-1995 展</h1></a>
+                <a href="전시정보 페이지 2.html"><h1>상설전 《조각가의 혼》展</h1></a>
+            </div>
+        </div>
+
+        <div class="threeplace">
+            <div class="title">
+                <h1>문신 미술관</h1>
+                <p>문신 미술관의 <b>모든 것</b></p>
+            </div>
+
+            <div class="expl">
+
+                <img src="https://i.postimg.cc/Y26RFR1X/202112231346389c816378-697a-4747-a909-3afd6294fe3f.jpg" width="32%">
+                <P>파리에서 활동하던 문신은 1980년 유년시절을 보낸 마산으로 귀국하여 15년 세월에 걸쳐서 직접 미술관 건립하여 1994년 문신미술관이 개관하게 되었다. 
+                    미술관 개관 1년 후 타계하면서 ‘사랑하는 고향에 미술관을 바치고 싶다’는 작가의 유언에 따라 2003년 문신미술관은 시에 기증되어 시립미술관으로 운영해 오고 있다.
+                    
+                    
+                    미술관은 제1전시관, 제2전시관, 야외조각전시장, 문신원형미술관으로 구성되어 있으며 조각, 석고원형, 유화, 채화, 드로잉, 유품, 공구 등 총 3,900여점의 작품 및 자료를 소장하고 있다. 
+                    또한 기획전시, 사회교육 프로그램 운영, 문화행사 등을 통해 지역시민의 문화에 대한 관심과 이해를 높이고 지역문화와 예술 발전에 기여하고자 노력하고 있다.
+                </P>
+            </div>
+
+            <a href="안내페이지.html">상상 더하기 ></a>
+        </div>
+
+        <div class="fourplace">
+            <div class="title">
+                <h1>문신 우체통</h1>
+                <p>문신 미술관 <b>안내 사항</b></p>
+            </div>
+
+            <div class="group">
+                <div class="subgroup1">
+                    <a href="이벤트 페이지.html"><img src="https://i.postimg.cc/nh3vvWsY/tips-and-updates-FILL0-wght400-GRAD0-opsz48.png" width="15%"></a>
+                    <a href="이벤트 페이지.html"><p>문신미술관 개천절/한글날 대체<br>휴일 정상운영 안내</p></a>
+                </div>
+
+                <div class="subgroup2">
+                    <a href="안내페이지.html"><img src="https://i.postimg.cc/V5Qd9q18/pin-drop-FILL0-wght400-GRAD0-opsz48.png" width="15%"></a>
+                    <a href="안내페이지.html"><p>문신미술관 찾아오시는 길 안내</p></a>
+                </div>
+
+                <div class="subgroup3">
+                    <a href="안내페이지.html"><img src="https://i.postimg.cc/y85cWZ37/import-contacts-FILL0-wght400-GRAD0-opsz48.png" width="15%"></a>
+                    <a href="안내페이지.html"><p>문신미술관 전시 관람 안내</p></a>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="footer">
+            <p>(우 51435) 경상남도 창원시 성산구 중앙대로 151 (용호동)</p>
+            <p>1899 - 1111, 055 -225 - 2114</p>
+            <p>개인정보처리방침 / 저작권 정책 / 뷰어 다운로드 / 오시는 길</p>
+            <hr size="3" noshade>
+            <br>
+            <p><b>Copyright 2022. Mun-sin art center All rights reserved.</b></p>
+        </div>
+    </div>
+</body>
+</html>
